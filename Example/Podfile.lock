@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - RCSceneLog (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - RCSceneLog (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  RCSceneLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  RCSceneLog: df9e117b2572c59b2b0eae59e212295439709ce0
+
+PODFILE CHECKSUM: c2ab32751a7179afa685785df5a07e2fa5c7dd60
+
+COCOAPODS: 1.11.2
