@@ -45,16 +45,16 @@
 }
 
 + (void)error:(NSString *)msg
-         file:(char *)file
-         func:(char *)func
+         file:(const char *)file
+         func:(const char *)func
          line:(NSInteger)line
        extend:(NSDictionary *)extend {
     [[self shareInstance] log:msg file:file func:func line:line level:RCSceneLogLevelError extend:extend];
 }
 
 - (void)log:(NSString *)msg
-       file:(char *)file
-       func:(char *)func
+       file:(const char *)file
+       func:(const char *)func
        line:(NSInteger)line
       level:(RCSceneLogLevel)level
      extend:(NSDictionary *)extend  {

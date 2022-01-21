@@ -44,8 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)addLogger:(id<RCSceneLogger>)logger;
 
 + (void)error:(NSString *)msg
-         file:(char *)file
-         func:(char *)func
+         file:(const char *)file
+         func:(const char *)func
          line:(NSInteger)line
        extend:(NSDictionary *)extend;
 @end
