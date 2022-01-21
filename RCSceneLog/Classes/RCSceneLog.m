@@ -44,23 +44,22 @@
     }
 }
 
-+ (void)error:(NSString *)msg
++ (void)error:(nullable NSString *)msg
          file:(const char *)file
          func:(const char *)func
          line:(NSInteger)line
-       extend:(NSDictionary *)extend {
+       extend:(nullable NSDictionary *)extend {
     [[self shareInstance] log:msg file:file func:func line:line level:RCSceneLogLevelError extend:extend];
 }
 
-- (void)log:(NSString *)msg
+- (void)log:(nullable NSString *)msg
        file:(const char *)file
        func:(const char *)func
        line:(NSInteger)line
       level:(RCSceneLogLevel)level
-     extend:(NSDictionary *)extend  {
+     extend:(nullable NSDictionary *)extend  {
     if (msg == nil || msg.length == 0) {
         NSLog(@"log msg is nil");
-        return;
     }
     if (self.loggers.count == 0) {
         NSLog(@"no logger");
