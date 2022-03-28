@@ -40,10 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 //业务扩展字段
 @property (nonatomic, copy, nullable) NSDictionary *extend;
 
-/*-------------------------------------------------------------*/
-
-@property (nonatomic, copy, nullable, class) NSString *version;
-
 - (instancetype)initWithMsg:(nullable NSString *)msg
                        line:(nullable NSString *)line
                        file:(nullable NSString *)file

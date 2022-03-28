@@ -10,6 +10,7 @@
 #import <sys/qos.h>
 
 @interface RCSceneLogEntity ()
+@property (nonatomic, copy, nullable, class) NSString *version;
 @property (nonatomic, copy, nullable, class) NSString *model;
 @property (nonatomic, copy, nullable, class) NSString *os;
 @end

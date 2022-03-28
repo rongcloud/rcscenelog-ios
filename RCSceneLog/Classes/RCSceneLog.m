@@ -8,6 +8,10 @@
 #import "RCSceneLog.h"
 #import "RCSceneLogEntity.h"
 
+@interface RCSceneLogEntity ()
+@property (nonatomic, copy, nullable, class) NSString *version;
+@end
+
 @interface RCSceneLog ()
 @property (nonatomic, strong) NSMutableArray<id<RCSceneLogger>> *loggers;
 @property (nonatomic, strong, class) dispatch_queue_t queue;
@@ -119,4 +123,12 @@
     return kDisQueue;
 }
 + (void)setDisQueue:(dispatch_queue_t)disQueue {}
+
++ (void)setVersion:(NSString *)version {
+    RCSceneLogEntity.version = version;
+}
+
++ (NSString *)version {
+    return RCSceneLogEntity.version;
+}
 @end

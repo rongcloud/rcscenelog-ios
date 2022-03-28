@@ -41,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RCSceneLog : NSObject
 
+@property (nonatomic, copy, nullable, class) NSString *version;
+
 + (void)addLogger:(id<RCSceneLogger>)logger;
 
 + (void)error:(nullable NSString *)msg
